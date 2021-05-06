@@ -27,6 +27,7 @@ RUN /usr/bin/apt-get update && \
     iputils-ping \
     kmod \
     less \
+    libpaper1 \
     linux-base \
     locales \
     lsb-release \
