@@ -46,6 +46,8 @@ RUN /usr/bin/apt-get update && \
     udev \
     vim-tiny \
     wget && \
+    locale-gen en_US.UTF-8 && \
+    dpkg-reconfigure locales && \
     /usr/bin/apt-get clean && \
     /usr/bin/apt-get -y autoremove && \
     rm -rf /tmp/* /var/tmp/* && \
