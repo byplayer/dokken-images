@@ -66,6 +66,7 @@ RUN /usr/bin/apt-get update && \
     -or -name '*udev*' \) \
     -exec rm -v \{} \; && \
     systemctl set-default multi-user.target && \
-    systemctl mask dev-hugepages.mount sys-fs-fuse-connections.mount network.service
+    systemctl mask dev-hugepages.mount sys-fs-fuse-connections.mount network.service && \
+    mkdir -p /tmp
 
 CMD [ "/bin/systemd" ]
