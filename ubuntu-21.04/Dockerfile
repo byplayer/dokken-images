@@ -16,6 +16,7 @@ RUN /usr/bin/apt-get update && \
     /usr/bin/apt-get -y install \
     apt-transport-https \
     apt-utils \
+    bash \
     curl \
     dbus \
     cron \
